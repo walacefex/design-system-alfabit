@@ -4,9 +4,21 @@ import Link, { LinkProps } from './'
 
 const meta: Meta<LinkProps> = {
   title: 'Molecules/Link',
-  tags: ['autodocs'],
   component: Link,
-  argTypes: {}
+  argTypes: {
+    children: {
+      type: 'string',
+    },
+    href: {
+      type: 'string',
+    },
+    disabled: {
+      type: 'boolean',
+    },
+    className: {
+      type: 'string',
+    },
+  }
 }
 
 export default meta
