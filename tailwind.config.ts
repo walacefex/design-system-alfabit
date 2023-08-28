@@ -11,6 +11,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      mulish: 'Mulish, sans-serif',
+    },
     screens: {
       mobile: 'var(--screen-mobile)',
       tablet: 'var(--screen-tablet)',
@@ -38,6 +41,13 @@ module.exports = {
       7: 'var(--spacing-xl) /* 40px */',
       8: 'var(--spacing-2xl) /* 48px */',
       9: 'var(--spacing-4xl) /* 56px */',
+    },
+    fontSize: {
+      xs: 'var(--font-xs)',
+      sm: 'var(--font-sm)',
+      md: 'var(--font-md)',
+      lg: 'var(--font-lg)',
+      xl: 'var(--font-xl)',
     },
     extend: {
       colors: {

@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+*{
+  font-family: "Mulish", sans-serif;
+}
+
 @layer base {
   :root {
     --primary: 45, 91, 255;
@@ -62,6 +66,13 @@
     --spacing-xl: 40px;
     --spacing-2xl: 48px;
     --spacing-4xl: 56px;
+
+    /* Font Size */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-nd: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
 
      /* Border Radius */
      --border-radius-none: 0px;
