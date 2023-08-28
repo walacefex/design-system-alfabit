@@ -60,13 +60,19 @@ module.exports = {
         icon: toRgba('--icon'),
         outline: toRgba('--outline'),
         divider: toRgba('--divider'),
-        'bg-light': toRgba('--bg-light'),
-        'bg-dark': toRgba('--bg-dark'),
-        'bg-disabled': toRgba('--bg-disabled'),
-        'text-primary': toRgba('--text-primary'),
-        'text-secondary': toRgba('--text-secondary'),
-        'text-tertiary': toRgba('--text-tertiary'),
-        'text-disabled': toRgba('--text-disabled'),
+      },
+      backgroundColor: {
+        light: 'rgba(var(--bg-light), <alpha-value>)',
+        dark: 'rgba(var(--bg-dark), <alpha-value>)',
+        disabled: 'rgba(var(--bg-disabled), <alpha-value>)',
+      },
+      textColor: {
+        gray: {
+          primary: 'rgba(var(--text-primary), <alpha-value>)',
+          secondary: 'rgba(var(--text-secondary), <alpha-value>)',
+          tertiary: 'rgba(var(--text-tertiary), <alpha-value>)',
+        },
+        disabled: 'rgba(var(--text-disabled), <alpha-value>)',
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
