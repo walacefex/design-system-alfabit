@@ -31,6 +31,9 @@
     --bg-light: 255, 255, 255;
     --bg-dark: 248, 248, 248;
     --bg-disabled: 239, 239, 239;
+    --bg-success: 230, 255, 226; 
+    --bg-alert: 255, 239,152;
+    --bg-error: 255, 242, 242;
   
     --text-primary: 24, 24, 24;
     --text-secondary: 92, 92, 92;

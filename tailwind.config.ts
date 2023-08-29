@@ -47,6 +47,9 @@ module.exports = {
         light: 'rgba(var(--bg-light), <alpha-value>)',
         dark: 'rgba(var(--bg-dark), <alpha-value>)',
         disabled: 'rgba(var(--bg-disabled), <alpha-value>)',
+        success: 'rgba(var(--bg-success), <alpha-value>)',
+        alert: 'rgba(var(--bg-alert), <alpha-value>)',
+        error: 'rgba(var(--bg-error), <alpha-value>)',
       },
       textColor: {
         gray: {
