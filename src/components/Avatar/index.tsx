@@ -1,9 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import { UserIcon } from '@heroicons/react/24/outline';
+import AvatarIcon from './AvatarIcon';
+import AvatarImage from './AvatarImage';
 
 export type AvatarProps = {
   size?: 'xs' | 'sm' | 'md' | 'lg';
+  image?: string;
+  description?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const AvatarSizesMap = {
@@ -13,8 +16,13 @@ const AvatarSizesMap = {
   lg: 'w-9 h-9',
 }
 
-const Avatar = ({size='xs', className, ...rest}: AvatarProps) => {
+const Avatar = ({size='xs', image, description="", className, ...rest}: AvatarProps) => {
   const avatarSizeClass = AvatarSizesMap[size]
+
+  const avatarComponent = image ? (
+    <AvatarImage src={image} altDescription={description} />
+  ) : (<AvatarIcon />)
+
   return (
     <div 
       className={
@@ -22,7 +30,7 @@ const Avatar = ({size='xs', className, ...rest}: AvatarProps) => {
         avatarSizeClass, className)}
         {...rest}
       >
-        <UserIcon className="absolute w-1/2 h-1/2" />
+        {avatarComponent}
     </div>
   )
 };

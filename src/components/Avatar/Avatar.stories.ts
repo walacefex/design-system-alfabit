@@ -16,3 +16,10 @@ export default meta;
 export const Primary: StoryObj<AvatarProps > = { 
     args: {}
 }
+
+export const AvatarImage: StoryObj<AvatarProps > = { 
+    args: {
+        size: "lg",
+        image: "https://placehold.co/400x400.png",
+    },
+}
