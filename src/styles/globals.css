@@ -74,6 +74,11 @@
     --text-lg: 18px;
     --text-xl: 20px;
 
+    /* Title Font Size */
+    --title-md: 40px;
+    --title-lg: 48px;
+    --title-xl: 56px;
+
      /* Border Radius */
      --border-radius-none: 0px;
      --border-radius-sm: 4px;
