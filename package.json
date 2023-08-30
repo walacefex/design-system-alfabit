@@ -35,9 +35,11 @@
     "@storybook/addon-mdx-gfm": "^7.3.2",
     "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/blocks": "^7.3.2",
+    "@storybook/manager-api": "^7.4.0",
     "@storybook/nextjs": "^7.3.2",
     "@storybook/react": "^7.3.2",
     "@storybook/testing-library": "^0.2.0",
+    "@storybook/theming": "^7.4.0",
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.3.2"
   }
