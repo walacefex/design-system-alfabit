@@ -1,0 +1,16 @@
+export default meta;
+type Story = StoryObj<typeof Modal>;
+
+export const ModalInfo: Story = {
+  args: {
+    isOpen: false,
+    title: "Modal Info",
+  },
+  render: (args: ModalProps) => {
+    return <ModalStoryInfo {...args} />;
+  },
+};
+
+### Modal Choice
+
+<Canvas of={Story.ModalChoice} layout="centered" />
