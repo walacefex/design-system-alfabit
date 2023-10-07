@@ -10,6 +10,13 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+       method: "alphabetical",
+       locales: "pt-BR",
+       order: ["Intro", "Atoms", "Molecules", "Organisms", "Templates", "Pages"],
+      },
+    },
   },
 };
 
