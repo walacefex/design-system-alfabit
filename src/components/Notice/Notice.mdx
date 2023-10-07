@@ -1,0 +1,26 @@
+import { Meta, Primary, Canvas, Controls } from "@storybook/blocks";
+
+import * as Story from "./Notice.stories.ts";
+
+<Meta of={Story} />
+
+# Notice
+
+This is a notice component.
+
+### Notice Success
+
+<Canvas of={Story.NoticeSuccess} />
+
+### Notice Alert
+
+<Canvas of={Story.NoticeAlert} />
+
+### Notice Error
+
+<Canvas of={Story.NoticeError} />
+
+## Interactive Documentation
+
+<Primary />
+<Controls />
