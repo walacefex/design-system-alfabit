@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Switch, { type SwitchProps } from "./";
 
 const meta: Meta<SwitchProps> = {
-  title: "Molecules/Switch",
+  title: "Design System/Molecules/Switch",
   component: Switch,
   argTypes: {
     defaultEnable: {
