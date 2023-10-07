@@ -4,31 +4,7 @@ import Button from "../Button/";
 import Typography from "../Typography/";
 import Modal, { type ModalProps } from "./";
 
-const meta: Meta<typeof Modal> = {
-  title: "Molecules/Modal",
-  component: Modal,
-  decorators: [
-    (Story) => (
-      <div style={{ margin: "3em" }}>
-        <Story />
-      </div>
-    ),
-  ],
-};
-
-export default meta;
-type Story = StoryObj<typeof Modal>;
-
-export const ModalInfo: Story = {
-  args: {
-    isOpen: false,
-    title: "Modal Info",
-  },
-  render: (args: ModalProps) => {
-    return <ModalStoryInfo {...args} />;
-  },
-};
-
+// eslint-disable-next-line storybook/default-exports
 const ModalStoryInfo = (args: ModalProps) => {
   const [isOpen, setIsOpen] = useState(args.isOpen);
   return (
@@ -57,28 +33,27 @@ const ModalStoryInfo = (args: ModalProps) => {
   );
 };
 
-const ModalStoryChoice = (args: ModalProps) => {
-  const [isOpen, setIsOpen] = useState(args.isOpen);
-  return (
-    <>
-      <Button onClick={() => setIsOpen(true)}>Abrir Modal</Button>
-      <Modal {...args} isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <Typography>Your changes will be lost</Typography>
-        <div className=" flex flex-col gap-3">
-          <Button>Save changes</Button>
-          <Button variant="secondary">Do not save</Button>
-        </div>
-      </Modal>
-    </>
-  );
+const meta: Meta<typeof Modal> = {
+  title: "Molecules/Modal",
+  component: Modal,
+  decorators: [
+    (Story) => (
+      <div style={{ margin: "3em" }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
-export const ModalChoice: Story = {
+export default meta;
+type Story = StoryObj<typeof Modal>;
+
+export const ModalInfo: Story = {
   args: {
     isOpen: false,
-    title: "Do you want to save your changes?",
+    title: "Modal Info",
   },
   render: (args: ModalProps) => {
-    return <ModalStoryChoice {...args} />;
+    return <ModalStoryInfo {...args} />;
   },
 };

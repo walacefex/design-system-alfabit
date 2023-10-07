@@ -1,16 +1,12 @@
-export default meta;
-type Story = StoryObj<typeof Modal>;
+import { Meta, Primary, Canvas, Controls } from "@storybook/blocks";
 
-export const ModalInfo: Story = {
-  args: {
-    isOpen: false,
-    title: "Modal Info",
-  },
-  render: (args: ModalProps) => {
-    return <ModalStoryInfo {...args} />;
-  },
-};
+import * as Story from "./Modal.stories.tsx";
 
-### Modal Choice
+<Meta of={Story} />
 
-<Canvas of={Story.ModalChoice} layout="centered" />
+# Modal
+This is a modal component that can be used to display content on top of the page.
+
+### Modal Info
+
+<Canvas of={Story.ModalInfo} layout="centered" />
