@@ -1,5 +1,5 @@
 {
-  "name": "alfabit-design-system-alura-1337",
+  "name": "alfabit-design-system-nextjs",
   "version": "0.1.0",
   "private": false,
   "scripts": {
@@ -50,7 +50,7 @@
   "license": "ISC",
   "files":[
     "src/styles/globals.css",
-    "src/tailwind.config.js",
+    "tailwind.config.js",
     "src/components/*",
     "src/fonts/*"
   ]
