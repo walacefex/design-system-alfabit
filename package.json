@@ -49,9 +49,9 @@
   "author": "Walace",
   "license": "ISC",
   "files":[
-    "styles/globals.css",
-    "tailwind.config.js",
-    "components/*",
-    "fonts/*"
+    "src/styles/globals.css",
+    "src/tailwind.config.js",
+    "src/components/*",
+    "src/fonts/*"
   ]
 }
