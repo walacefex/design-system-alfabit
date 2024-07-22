@@ -1,7 +1,7 @@
 {
-  "name": "alfabit-design-system",
+  "name": "alfabit-design-system-alura-1337",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -43,5 +43,15 @@
     "chromatic": "^7.2.3",
     "eslint-plugin-storybook": "^0.6.14",
     "storybook": "^7.4.6"
-  }
+  },
+  "description": "This Design System project has the purpose of creating components of an application made in Next.js with Typescript, Storybook and TailWindCSS",
+  "main": "components/index.ts",
+  "author": "Walace",
+  "license": "ISC",
+  "files":[
+    "styles/globals.css",
+    "tailwind.config.js",
+    "components/*",
+    "fonts/*"
+  ]
 }
