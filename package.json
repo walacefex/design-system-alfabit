@@ -1,6 +1,6 @@
 {
   "name": "alfabit-design-system-nextjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -49,8 +49,8 @@
   "author": "Walace",
   "license": "ISC",
   "files":[
+    "./tailwind.config.ts",
     "src/styles/globals.css",
-    "tailwind.config.js",
     "src/components/*",
     "src/fonts/*"
   ]
